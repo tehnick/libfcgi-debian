@@ -8,9 +8,6 @@ export AUTOMAKE=automake --foreign
 %:
 	dh $@ --with autoreconf
 
-override_dh_auto_configure:
-	dh_auto_configure -- $(shell dpkg-buildflags --export=cmdline)
-
 override_dh_auto_install:
 	dh_auto_install
 	find debian -name '*.la' | xargs -r rm -f
