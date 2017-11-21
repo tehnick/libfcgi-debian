@@ -1,3 +1,23 @@
+libfcgi (2.4.0-9) unstable; urgency=medium
+
+  * New maintainer. (Closes: #837523)
+  * Bump Standards-Version to 4.1.1 (was 3.9.5): no changes required.
+  * Bump debhelper version to 10 (was 9); update debian/compat.
+  * Update debian/control:
+    - update Homepage field
+    - add Vcs-Git and Vcs-Browser fields
+    - delete build dependency from dh-autoreconf
+    - update short and long descriptions of binary packages
+    - fix lintian note binary-control-field-duplicates-source field
+  * Rename old patches for using of common naming scheme.
+  * Add description to patch binutils-indirect-linking.
+  * Add patch reset-file-descriptor-after-closing. (LP: #1248516)
+  * Delete empty file debian/libfcgi0ldbl.manpages.
+  * Update debian/copyright.
+  * Update debian/watch.
+
+ -- Boris Pek <tehnick@debian.org>  Wed, 22 Nov 2017 02:56:53 +0300
+
 libfcgi (2.4.0-8.4) unstable; urgency=medium
 
   * Non-maintainer upload.
