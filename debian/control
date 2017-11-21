@@ -15,10 +15,12 @@ Description: header files of FastCGI
  FastCGI is a language independent, scalable, open extension
  to CGI that provides high performance without the limitations
  of server specific APIs.
+ .
+ This package contains the header files, symlinks and static libraries which
+ are needed to develop applications based on libfcgi.
 
 Package: libfcgi0ldbl
 Provides: libfcgi
-Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends: libfcgi-bin (= ${binary:Version})
@@ -29,6 +31,8 @@ Description: shared library of FastCGI
  FastCGI is a language independent, scalable, open extension
  to CGI that provides high performance without the limitations
  of server specific APIs.
+ .
+ This package contains the shared libraries.
 
 Package: libfcgi-bin
 Section: utils
