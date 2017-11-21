@@ -1,12 +1,13 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Source: http://www.fastcgi.com/#TheDevKit
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: https://github.com/FastCGI-Archives/fcgi2/tags
 
 Files: *
 Copyright: 1996 Open Market, Inc.
 License: FASTCGI
 
 Files: debian/*
-Copyright: Tatsuki Sugiura <sugi@nemui.org>
+Copyright: 2003-2010 Tatsuki Sugiura <sugi@nemui.org>
+           2017 Boris Pek <tehnick-8@yandex.ru>
 License: FASTCGI
 
 License: FASTCGI
