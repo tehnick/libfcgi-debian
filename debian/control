@@ -1,10 +1,9 @@
 Source: libfcgi
 Section: libs
 Priority: optional
-Maintainer: Tatsuki Sugiura <sugi@nemui.org>
+Maintainer: Boris Pek <tehnick@debian.org>
 Build-Depends: debhelper (>= 9), dh-autoreconf
 Standards-Version: 3.9.5
-Uploaders: Taku YASUI <tach@debian.or.jp>
 Homepage: http://www.fastcgi.com/drupal/
 
 Package: libfcgi-dev
