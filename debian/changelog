@@ -1,0 +1,110 @@
+libfcgi (2.4.0-8.4) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Enable Multi-Arch: (Closes: #823600)
+    + Switch to debhelper 9 to support multiarch paths.
+      + dh option --with must come after sequence
+    + Split cgi-fcgi to separate M-A:foreign package libfcgi-bin.
+    + libfcgi0ldbl only Recommends libcgi-fcgi to avoid a circular dependency.
+
+ -- Helmut Grohne <h.grohne@intenta.de>  Fri, 06 May 2016 12:47:58 +0200
+
+libfcgi (2.4.0-8.3) unstable; urgency=medium
+
+  * Non-maintainer upload.
+
+  [ James Page ]
+  * d/patches/fix_compiler_warnings.patch: Fixup misc complier warnings
+    in the codebase.
+  * d/libfcgi0ldbl.manpages,rules: Don't install manpage using rules file.
+  * d/libfcgi0ldbl.docs: Rationalized to prevent duplicate install of docs.
+  * d/dirs: Dropped - not actually required and generates linitan warning.
+  * d/control,rules: Drop use of quilt dh addon as this is provided by
+    debhelper.
+  * d/control: Bumped Standards-Version to 3.9.5:
+    - d/copyright: Converted to machine readable format.
+
+  [ Clint Byrum ]
+  * Applying patch to use poll instead of select which helps handle
+    more than 1024 connections. (LP: #933417). Thanks Anton Kortunov!
+    Closes: #681591.
+
+  [ Matthias Klose ]
+  * Build with hardening defaults.
+  * d/rules: Stop install .la files. Closes: #633182.
+
+ -- Matthias Klose <doko@debian.org>  Fri, 08 Aug 2014 12:41:22 +0200
+
+libfcgi (2.4.0-8.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Update libtool at build time using dh-autoreconf, to support new
+    architectures (Closes: #727286)
+
+ -- Daniel Schepler <schepler@debian.org>  Mon, 04 Mar 2013 08:10:42 -0800
+
+libfcgi (2.4.0-8.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Apply patch from Stefan Potyra to fix indirect linking with recent
+    binutils version. Closes: #555178.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 20 Aug 2011 23:39:54 +0200
+
+libfcgi (2.4.0-8) unstable; urgency=low
+
+  * Switch to dpkg-source 3.0 (quilt) format
+  * Add section on source package (Closes: #568227)
+
+ -- Tatsuki Sugiura <sugi@nemui.org>  Sat, 23 Jan 2010 19:06:39 +0900
+
+libfcgi (2.4.0-7.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix FTBFS with GCC 4.4, thanks to Martin Michlmayr (Closes: #504963)
+
+ -- David Paleino <dapal@debian.org>  Mon, 21 Dec 2009 15:45:39 +0100
+
+libfcgi (2.4.0-7) unstable; urgency=low
+
+  * rebuild for long double 128bit transition. (Closes: #430250)
+  * update autotools scripts
+
+ -- Tatsuki Sugiura <sugi@nemui.org>  Tue,  5 Sep 2006 18:11:06 +0900
+
+libfcgi (2.4.0-6) unstable; urgency=low
+
+  * rebuild for new libstdc++
+
+ -- Tatsuki Sugiura <sugi@nemui.org>  Tue,  5 Sep 2006 08:19:25 +0900
+
+libfcgi (2.4.0-5) unstable; urgency=low
+
+  * fixed: package description (Closes: #226030)
+
+ -- Tatsuki Sugiura <sugi@nemui.org>  Mon,  5 Jan 2004 18:40:30 +0900
+
+libfcgi (2.4.0-4) unstable; urgency=low
+
+  * re-libtoolize for mips and mipsel (Closes: #213951)
+
+ -- Tatsuki Sugiura <sugi@nemui.org>  Tue, 18 Nov 2003 05:39:33 +0900
+
+libfcgi (2.4.0-3) unstable; urgency=low
+
+  * upload official debian archive agein (Closes: #203590)
+
+ -- Tatsuki Sugiura <sugi@nemui.org>  Sun, 21 Sep 2003 04:45:12 +0900
+
+libfcgi (2.4.0-2) unstable; urgency=low
+
+  * upload official debian archive (Closes: #203590)
+
+ -- Tatsuki Sugiura <sugi@nemui.org>  Mon,  8 Sep 2003 16:11:52 +0900
+
+libfcgi (2.4.0-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Tatsuki Sugiura <sugi@nemui.org>  Tue,  8 Jul 2003 13:58:36 +0900
+
