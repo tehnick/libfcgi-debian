@@ -2,3 +2,4 @@ binutils-indirect-linking.patch
 gcc44-fix-include.patch
 use-poll.patch
 fix-compiler-warnings.patch
+reset-file-descriptor-after-closing.patch
