@@ -1,3 +1,10 @@
+Author: Stefan Potyra <stefan.potyra@informatik.uni-erlangen.de>
+Bug-Debian: https://bugs.debian.org/555178
+Description: fix FTBFS with binutils-gold
+Last-Update: 2017-11-22
+Forwarded: no
+
+
 --- libfcgi-2.4.0.orig/examples/Makefile.am
 +++ libfcgi-2.4.0/examples/Makefile.am
 @@ -34,5 +34,5 @@ threaded_CFLAGS    = @PTHREAD_CFLAGS@
