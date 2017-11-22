@@ -1,9 +1,11 @@
 #!/usr/bin/make -f
 
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 export AUTOMAKE=automake --foreign
 
 %:
-	dh $@ --with autoreconf
+	dh $@ --no-parallel --with autoreconf
 
 override_dh_auto_install:
 	dh_auto_install
