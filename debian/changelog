@@ -1,3 +1,11 @@
+libfcgi (2.4.0-10) unstable; urgency=medium
+
+  * Update debian/rules:
+    - enable all hardening flags
+    - add --no-parallel option to dh
+
+ -- Boris Pek <tehnick@debian.org>  Wed, 22 Nov 2017 03:48:26 +0300
+
 libfcgi (2.4.0-9) unstable; urgency=medium
 
   * New maintainer. (Closes: #837523)
