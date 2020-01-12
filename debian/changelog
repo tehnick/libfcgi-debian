@@ -2,6 +2,7 @@ libfcgi (2.4.0-11) UNRELEASED; urgency=medium
 
   * Trim trailing whitespace.
   * Add missing build dependency on dh addon.
+  * Bump debhelper from old 10 to 12.
 
  -- Debian Janitor <janitor@jelmer.uk>  Sun, 12 Jan 2020 22:54:16 +0000
 
