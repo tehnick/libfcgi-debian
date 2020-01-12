@@ -6,6 +6,7 @@ libfcgi (2.4.0-11) UNRELEASED; urgency=medium
   * Set debhelper-compat version in Build-Depends.
   * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
     Repository-Browse.
+  * Drop unnecessary dependency on dh-autoreconf.
 
  -- Debian Janitor <janitor@jelmer.uk>  Sun, 12 Jan 2020 22:54:16 +0000
 

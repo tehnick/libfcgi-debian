@@ -5,7 +5,7 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 export AUTOMAKE=automake --foreign
 
 %:
-	dh $@ --no-parallel --with autoreconf
+	dh $@ --no-parallel
 
 override_dh_auto_install:
 	dh_auto_install
