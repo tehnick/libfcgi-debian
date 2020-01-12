@@ -4,6 +4,8 @@ libfcgi (2.4.0-11) UNRELEASED; urgency=medium
   * Add missing build dependency on dh addon.
   * Bump debhelper from old 10 to 12.
   * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
 
  -- Debian Janitor <janitor@jelmer.uk>  Sun, 12 Jan 2020 22:54:16 +0000
 
