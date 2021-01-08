@@ -1,2 +1,4 @@
-version=3
-https://github.com/FastCGI-Archives/fcgi2/tags .*/FastCGI-Archives/fcgi2/archive/(\d.+)\.tar\.gz debian uupdate
+version=4
+https://github.com/FastCGI-Archives/fcgi2/tags \
+.*/FastCGI-Archives/fcgi2/archive/(\d.+)\.tar\.gz \
+debian uupdate
