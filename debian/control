@@ -2,11 +2,12 @@ Source: libfcgi
 Section: libs
 Priority: optional
 Maintainer: Boris Pek <tehnick@debian.org>
-Build-Depends: debhelper (>= 10)
-Standards-Version: 4.1.1
+Build-Depends: debhelper-compat (= 13)
 Homepage: https://github.com/FastCGI-Archives
 Vcs-Git: https://github.com/tehnick/libfcgi-debian.git
 Vcs-Browser: https://github.com/tehnick/libfcgi-debian
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
 
 Package: libfcgi-dev
 Section: libdevel
