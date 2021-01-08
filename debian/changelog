@@ -1,3 +1,25 @@
+libfcgi (2.4.2-1) experimental; urgency=medium
+
+  * New upstream release. (Closes: #971372) (LP: #1265541)
+  * Remove all patches: accepted in upstream.
+  * Update debian/watch.
+  * Update debian/control:
+    - bump Standards-Version to 4.5.1 (was 4.1.1): no changes required
+    - replace build dependency from debhelper (>= 10) to
+      debhelper-compat (= 13)
+    - add Rules-Requires-Root: no
+  * Delete debian/compat.
+  * Update debian/libfcgi-dev.install.
+  * Update years in debian/copyright.
+  * Simplify debian/rules:
+    remove DEB_LDFLAGS_MAINT_APPEND variable with -Wl,--as-needed flag.
+  * Move debian/libfcgi0ldbl.docs to debian/libfcgi0ldbl.docs and update it.
+  * Add debian/libfcgi-dev.doc-base.
+  * Add debian/libfcgi0ldbl.lintian-overrides.
+  * Add debian/upstream/metadata.
+
+ -- Boris Pek <tehnick@debian.org>  Fri, 08 Jan 2021 05:34:28 +0300
+
 libfcgi (2.4.0-10) unstable; urgency=medium
 
   * Update debian/rules:
